@@ -1,0 +1,177 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	W:/repos/raytracing/src/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/80ee839/
+ABS	raytracer_math.h	/^#define ABS(/;"	d
+Albedo	raytracer_materials.h	/^		v3f Albedo;$/;"	m	class:lambertian	typeref:typename:v3f
+Albedo	raytracer_materials.h	/^		v3f Albedo;$/;"	m	class:metal	typeref:typename:v3f
+CameraOrigin	raytracer_renderer.h	/^		v3f CameraOrigin;$/;"	m	class:camera	typeref:typename:v3f
+Center	raytracer_geometry.h	/^		v3f Center;$/;"	m	class:sphere	typeref:typename:v3f
+DEG_TO_RAD	raytracer_math.h	/^#define DEG_TO_RAD(/;"	d
+Direction	raytracer_ray.h	/^		v3f Direction;$/;"	m	class:ray	typeref:typename:v3f
+DiskX	raytracer_renderer.h	/^		v3f DiskX;$/;"	m	class:camera	typeref:typename:v3f
+DiskY	raytracer_renderer.h	/^		v3f DiskY;$/;"	m	class:camera	typeref:typename:v3f
+LookAt	raytracer_renderer.h	/^		v3f LookAt;$/;"	m	class:camera	typeref:typename:v3f
+LookFrom	raytracer_renderer.h	/^		v3f LookFrom;$/;"	m	class:camera	typeref:typename:v3f
+MIN	raytracer_math.h	/^#define MIN(/;"	d
+Material	raytracer_geometry.h	/^		material *Material;$/;"	m	class:sphere	typeref:typename:material *
+Material	raytracer_hitable.h	/^	material *Material;$/;"	m	struct:intersect_record	typeref:typename:material *
+Normal	raytracer_geometry.h	/^		v3f Normal;$/;"	m	class:plane	typeref:typename:v3f
+Normal	raytracer_hitable.h	/^	v3f Normal;$/;"	m	struct:intersect_record	typeref:typename:v3f
+Objects	raytracer_hitable_list.h	/^		std::vector<object *> Objects;$/;"	m	class:object_list	typeref:typename:std::vector<object * >
+Origin	raytracer_ray.h	/^		v3f Origin;$/;"	m	class:ray	typeref:typename:v3f
+P0	raytracer_geometry.h	/^		v3f P0;$/;"	m	class:plane	typeref:typename:v3f
+PI32	raytracer_math.h	/^#define PI32 /;"	d
+Pixel00	raytracer_renderer.h	/^		v3f Pixel00;$/;"	m	class:camera	typeref:typename:v3f
+Pos	raytracer_hitable.h	/^	v3f Pos;$/;"	m	struct:intersect_record	typeref:typename:v3f
+RAYTRACER_GEOMETRY_H	raytracer_geometry.h	/^#define RAYTRACER_GEOMETRY_H$/;"	d
+RAYTRACER_HITABLE_H	raytracer_hitable.h	/^#define RAYTRACER_HITABLE_H$/;"	d
+RAYTRACER_HITABLE_LIST_H	raytracer_hitable_list.h	/^#define RAYTRACER_HITABLE_LIST_H$/;"	d
+RAYTRACER_MATERIALS_H	raytracer_materials.h	/^#define RAYTRACER_MATERIALS_H$/;"	d
+RAYTRACER_MATH_H	raytracer_math.h	/^#define RAYTRACER_MATH_H /;"	d
+RAYTRACER_RAY_H	raytracer_ray.h	/^#define RAYTRACER_RAY_H$/;"	d
+RAYTRACER_RENDER_H	raytracer_renderer.h	/^#define RAYTRACER_RENDER_H$/;"	d
+SQUARE	raytracer_math.h	/^#define SQUARE(/;"	d
+U	raytracer_renderer.h	/^		v3f U;$/;"	m	class:camera	typeref:typename:v3f
+Up	raytracer_renderer.h	/^		v3f Up;$/;"	m	class:camera	typeref:typename:v3f
+V	raytracer_renderer.h	/^		v3f V;$/;"	m	class:camera	typeref:typename:v3f
+ViewPortHeight	raytracer_renderer.h	/^		f32 ViewPortHeight;$/;"	m	class:camera	typeref:typename:f32
+ViewPortUpperLeft	raytracer_renderer.h	/^		v3f ViewPortUpperLeft;$/;"	m	class:camera	typeref:typename:v3f
+ViewPortWidth	raytracer_renderer.h	/^		f32 ViewPortWidth;$/;"	m	class:camera	typeref:typename:f32
+ViewPortX	raytracer_renderer.h	/^		v3f ViewPortX;$/;"	m	class:camera	typeref:typename:v3f
+ViewPortY	raytracer_renderer.h	/^		v3f ViewPortY;$/;"	m	class:camera	typeref:typename:v3f
+W	raytracer_renderer.h	/^		v3f W;$/;"	m	class:camera	typeref:typename:v3f
+add	raytracer_hitable_list.h	/^object_list::add(object *Obj)$/;"	f	class:object_list	typeref:typename:void
+aspect_ratio	raytracer_renderer.h	/^		f32 aspect_ratio;$/;"	m	class:camera	typeref:typename:f32
+b	raytracer_math.h	/^		inline f32 b() const {return e[2]; }$/;"	f	class:v3f	typeref:typename:f32
+b32	raytracer.cpp	/^typedef u32 b32;$/;"	t	typeref:typename:u32	file:
+camera	raytracer_renderer.h	/^camera::camera()$/;"	f	class:camera
+camera	raytracer_renderer.h	/^class camera$/;"	c
+clamp	raytracer_math.h	/^clamp(f32 a, f32 x, f32 b)$/;"	f	typeref:typename:f32
+color_linear_to_gamma2	raytracer_math.h	/^color_linear_to_gamma2(v3f Color)$/;"	f	typeref:typename:v3f
+common_compiler_flags	build.bat	/^set common_compiler_flags=-Od -Zi -EHsc$/;"	v
+contains	raytracer_math.h	/^interval::contains(f32 x) const$/;"	f	class:interval	typeref:typename:b32
+cross	raytracer_math.h	/^cross(const v3f &U, const v3f &V)$/;"	f	typeref:typename:v3f
+dX	raytracer_renderer.h	/^		v3f dX;$/;"	m	class:camera	typeref:typename:v3f
+dY	raytracer_renderer.h	/^		v3f dY;$/;"	m	class:camera	typeref:typename:v3f
+defocus_angle	raytracer_renderer.h	/^		f32 defocus_angle;$/;"	m	class:camera	typeref:typename:f32
+defocus_disk_sample	raytracer_renderer.h	/^camera::defocus_disk_sample() const$/;"	f	class:camera	typeref:typename:v3f
+defocus_radius	raytracer_renderer.h	/^		f32 defocus_radius;$/;"	m	class:camera	typeref:typename:f32
+depth	raytracer_geometry.h	/^		f32 depth;$/;"	m	class:plane	typeref:typename:f32
+dielectric	raytracer_materials.h	/^class dielectric: public material$/;"	c
+dielectric	raytracer_materials.h	/^dielectric::dielectric(f32 refract_index)$/;"	f	class:dielectric
+distance	raytracer_geometry.h	/^		f32 distance;$/;"	m	class:plane	typeref:typename:f32
+dot	raytracer_math.h	/^dot(const v3f &U, const v3f &V)$/;"	f	typeref:typename:f32
+e	raytracer_math.h	/^		f32 e[3];$/;"	m	class:v3f	typeref:typename:f32[3]
+empty	raytracer_math.h	/^static const interval empty(inf, -inf);$/;"	v	typeref:typename:const interval
+f32	raytracer.cpp	/^typedef float f32;$/;"	t	typeref:typename:float	file:
+f64	raytracer.cpp	/^typedef double f64;$/;"	t	typeref:typename:double	file:
+focal_length	raytracer_renderer.h	/^		f32 focal_length;$/;"	m	class:camera	typeref:typename:f32
+focus_dist	raytracer_renderer.h	/^		f32 focus_dist;$/;"	m	class:camera	typeref:typename:f32
+fov_vertical	raytracer_renderer.h	/^		f32 fov_vertical;$/;"	m	class:camera	typeref:typename:f32
+front_face	raytracer_hitable.h	/^	b32 front_face;$/;"	m	struct:intersect_record	typeref:typename:b32
+fuzz	raytracer_materials.h	/^		f32 fuzz;$/;"	m	class:metal	typeref:typename:f32
+g	raytracer_math.h	/^		inline f32 g() const {return e[1]; }$/;"	f	class:v3f	typeref:typename:f32
+image_height	raytracer_renderer.h	/^		u32 image_height;$/;"	m	class:camera	typeref:typename:u32
+image_render	raytracer_renderer.h	/^camera::image_render(object *Obj, char *filename) const$/;"	f	class:camera	typeref:typename:void
+image_width	raytracer_renderer.h	/^		u32 image_width;$/;"	m	class:camera	typeref:typename:u32
+include_dir	build.bat	/^set include_dir= \/I "..\/src"$/;"	v
+inf	raytracer_math.h	/^const f32 inf = std::numeric_limits<f32>::infinity();$/;"	v	typeref:typename:const f32
+intersect_record	raytracer_hitable.h	/^struct intersect_record$/;"	s
+interval	raytracer_math.h	/^		interval() {}$/;"	f	class:interval
+interval	raytracer_math.h	/^class interval$/;"	c
+interval	raytracer_math.h	/^interval::interval(f32 _min, f32 _max)$/;"	f	class:interval
+lambertian	raytracer_materials.h	/^		lambertian(const v3f &A) {Albedo = A;}$/;"	f	class:lambertian
+lambertian	raytracer_materials.h	/^class lambertian: public material$/;"	c
+length	raytracer_math.h	/^		inline f32 length() const {return sqrt(e[0]*e[0] + e[1]*e[1] + e[2]*e[2]);}$/;"	f	class:v3f	typeref:typename:f32
+length_squared	raytracer_math.h	/^		inline f32 length_squared() const {return e[0]*e[0] + e[1]*e[1] + e[2]*e[2];}$/;"	f	class:v3f	typeref:typename:f32
+lerp	raytracer_ray.h	/^ray::lerp(f32 t) const$/;"	f	class:ray	typeref:typename:v3f
+main	raytracer.cpp	/^int main(int argc, char **argv)$/;"	f	typeref:typename:int
+main_file	build.bat	/^set main_file=raytracer.cpp$/;"	v
+material	raytracer_materials.h	/^class material$/;"	c
+max	raytracer_math.h	/^		f32 min, max;$/;"	m	class:interval	typeref:typename:f32
+metal	raytracer_materials.h	/^class metal: public material$/;"	c
+metal	raytracer_materials.h	/^metal::metal(const v3f &A, f32 f)$/;"	f	class:metal
+min	raytracer_math.h	/^		f32 min, max;$/;"	m	class:interval	typeref:typename:f32
+normal_out_set	raytracer_geometry.h	/^sphere::normal_out_set(const ray &Ray, const v3f &NormalOut, intersect_record &IntersectRecord) /;"	f	class:sphere	typeref:typename:void
+normal_out_set	raytracer_hitable.h	/^object::normal_out_set(const ray &Ray, const v3f &NormalOut, intersect_record &IntersectRecord) /;"	f	class:object	typeref:typename:void
+normalize	raytracer_math.h	/^v3f::normalize()$/;"	f	class:v3f	typeref:typename:void
+object	raytracer_hitable.h	/^class object$/;"	c
+object_list	raytracer_hitable_list.h	/^		object_list() {}$/;"	f	class:object_list
+object_list	raytracer_hitable_list.h	/^class object_list: public object$/;"	c
+operator *	raytracer_math.h	/^operator*(const v3f &V, f32 t)$/;"	f	typeref:typename:v3f
+operator *	raytracer_math.h	/^operator*(f32 t, const v3f &V)$/;"	f	typeref:typename:v3f
+operator *=	raytracer_math.h	/^v3f::operator*=(const f32 t)$/;"	f	class:v3f	typeref:typename:v3f &
+operator *=	raytracer_math.h	/^v3f::operator*=(const v3f &V)$/;"	f	class:v3f	typeref:typename:v3f &
+operator +	raytracer_math.h	/^		inline const v3f& operator+() const {return *this; }$/;"	f	class:v3f	typeref:typename:const v3f &
+operator +	raytracer_math.h	/^operator+(const v3f &U, const v3f &V)$/;"	f	typeref:typename:v3f
+operator +=	raytracer_math.h	/^v3f::operator+=(const v3f &V)$/;"	f	class:v3f	typeref:typename:v3f &
+operator -	raytracer_math.h	/^		inline v3f operator-() const {return v3f(-e[0], -e[1], -e[2]);}$/;"	f	class:v3f	typeref:typename:v3f
+operator -	raytracer_math.h	/^operator-(const v3f &U, const v3f &V)$/;"	f	typeref:typename:v3f
+operator -=	raytracer_math.h	/^v3f::operator-=(const v3f& V)$/;"	f	class:v3f	typeref:typename:v3f &
+operator <<	raytracer_math.h	/^operator<<(std::ostream &os, const v3f &V)$/;"	f	typeref:typename:std::ostream &
+operator >>	raytracer_math.h	/^operator>>(std::istream &is, v3f &V)$/;"	f	typeref:typename:std::istream &
+operator []	raytracer_math.h	/^		inline f32 operator[](int i) const {return e[i]; }$/;"	f	class:v3f	typeref:typename:f32
+operator []	raytracer_math.h	/^		inline f32& operator[](int i) {return e[i]; }$/;"	f	class:v3f	typeref:typename:f32 &
+plane	raytracer_geometry.h	/^		plane(const v3f &Center, const v3f &N, f32 w, f32 d) {P0 = Center; Normal = N; width = w; dept/;"	f	class:plane
+plane	raytracer_geometry.h	/^class plane: public object$/;"	c
+r	raytracer_math.h	/^		inline f32 r() const {return e[0]; }$/;"	f	class:v3f	typeref:typename:f32
+radius	raytracer_geometry.h	/^		f32 radius;$/;"	m	class:sphere	typeref:typename:f32
+random_interval	raytracer_math.h	/^random_interval(f32 min, f32 max)$/;"	f	typeref:typename:f32
+random_unit	raytracer_math.h	/^random_unit()$/;"	f	typeref:typename:f32
+ray	raytracer_ray.h	/^		ray() {}$/;"	f	class:ray
+ray	raytracer_ray.h	/^class ray$/;"	c
+ray	raytracer_ray.h	/^ray::ray(const v3f &O, const v3f &D)$/;"	f	class:ray
+ray_color	raytracer_renderer.h	/^camera::ray_color(object *Obj, const ray &Ray, u32 scatter_count) const$/;"	f	class:camera	typeref:typename:v3f
+ray_get	raytracer_renderer.h	/^camera::ray_get(s32 x, s32 y) const$/;"	f	class:camera	typeref:typename:ray
+ray_intersect	raytracer_geometry.h	/^plane::ray_intersect(const ray &Ray, interval RayInterval, intersect_record &IntersectRecord) co/;"	f	class:plane	typeref:typename:b32
+ray_intersect	raytracer_geometry.h	/^sphere::ray_intersect(const ray &Ray, interval RayInterval, intersect_record &IntersectRecord) c/;"	f	class:sphere	typeref:typename:b32
+ray_intersect	raytracer_hitable_list.h	/^object_list::ray_intersect(const ray &Ray, interval RayInterval, intersect_record &IntersectReco/;"	f	class:object_list	typeref:typename:b32
+ray_sample_square	raytracer_renderer.h	/^camera::ray_sample_square() const$/;"	f	class:camera	typeref:typename:v3f
+ray_scatter	raytracer_materials.h	/^dielectric::ray_scatter(const ray &RayIn, const intersect_record &IntersectRecord, v3f &Atten, r/;"	f	class:dielectric	typeref:typename:b32
+ray_scatter	raytracer_materials.h	/^lambertian::ray_scatter(const ray &RayIn, const intersect_record &IntersectRecord, v3f &Atten, r/;"	f	class:lambertian	typeref:typename:b32
+ray_scatter	raytracer_materials.h	/^metal::ray_scatter(const ray &RayIn, const intersect_record &IntersectRecord, v3f &Atten, ray &R/;"	f	class:metal	typeref:typename:b32
+reflect	raytracer_math.h	/^reflect(const v3f &V, const v3f &N)$/;"	f	typeref:typename:v3f
+reflectance	raytracer_math.h	/^reflectance(f32 cosine, f32 ref_idx)$/;"	f	typeref:typename:f32
+refract	raytracer_math.h	/^refract(const v3f & V, const v3f &Normal, f32 etai_over_etat)$/;"	f	typeref:typename:v3f
+refraction_index	raytracer_materials.h	/^		f32 refraction_index;$/;"	m	class:dielectric	typeref:typename:f32
+s16	raytracer.cpp	/^typedef int16_t s16;$/;"	t	typeref:typename:int16_t	file:
+s32	raytracer.cpp	/^typedef int32_t s32;$/;"	t	typeref:typename:int32_t	file:
+s64	raytracer.cpp	/^typedef int64_t s64;$/;"	t	typeref:typename:int64_t	file:
+s8	raytracer.cpp	/^typedef int8_t s8;$/;"	t	typeref:typename:int8_t	file:
+sample_count	raytracer_renderer.h	/^		u32 sample_count;$/;"	m	class:camera	typeref:typename:u32
+scatter_count	raytracer_renderer.h	/^		u32 scatter_count;$/;"	m	class:camera	typeref:typename:u32
+sphere	raytracer_geometry.h	/^		sphere() {}$/;"	f	class:sphere
+sphere	raytracer_geometry.h	/^class sphere: public object$/;"	c
+sphere	raytracer_geometry.h	/^sphere::sphere(v3f C, f32 r, material *M)$/;"	f	class:sphere
+surrounds	raytracer_math.h	/^interval::surrounds(f32 x) const$/;"	f	class:interval	typeref:typename:b32
+t	raytracer_hitable.h	/^	f32 t;$/;"	m	struct:intersect_record	typeref:typename:f32
+u16	raytracer.cpp	/^typedef uint16_t u16;$/;"	t	typeref:typename:uint16_t	file:
+u32	raytracer.cpp	/^typedef uint32_t u32;$/;"	t	typeref:typename:uint32_t	file:
+u64	raytracer.cpp	/^typedef uint64_t u64;$/;"	t	typeref:typename:uint64_t	file:
+u8	raytracer.cpp	/^typedef uint8_t u8;$/;"	t	typeref:typename:uint8_t	file:
+unit_vector	raytracer_math.h	/^unit_vector(v3f V)$/;"	f	typeref:typename:v3f
+universe	raytracer_math.h	/^static const interval universe(-inf, inf);$/;"	v	typeref:typename:const interval
+v3f	raytracer_math.h	/^		v3f() {}$/;"	f	class:v3f
+v3f	raytracer_math.h	/^		v3f(f32 e0, f32 e1, f32 e2) {e[0] = e0; e[1] = e1; e[2] = e2;}$/;"	f	class:v3f
+v3f	raytracer_math.h	/^class v3f$/;"	c
+v3f_hadamard	raytracer_math.h	/^v3f_hadamard(v3f U, v3f V)$/;"	f	typeref:typename:v3f
+v3f_near_zero	raytracer_math.h	/^v3f_near_zero(v3f V)$/;"	f	typeref:typename:b32
+v3f_rand	raytracer_math.h	/^v3f_rand()$/;"	f	typeref:typename:v3f
+v3f_rand_in_hemisphere	raytracer_math.h	/^v3f_rand_in_hemisphere(const v3f &Normal)$/;"	f	typeref:typename:v3f
+v3f_rand_in_unit_disk	raytracer_math.h	/^v3f_rand_in_unit_disk()$/;"	f	typeref:typename:v3f
+v3f_rand_in_unit_sphere	raytracer_math.h	/^v3f_rand_in_unit_sphere()$/;"	f	typeref:typename:v3f
+v3f_rand_unit_vector	raytracer_math.h	/^v3f_rand_unit_vector()$/;"	f	typeref:typename:v3f
+width	raytracer_geometry.h	/^		f32 width;$/;"	m	class:plane	typeref:typename:f32
+world_list_defocus_blur	raytracer.cpp	/^world_list_defocus_blur()$/;"	f	typeref:typename:object_list
+world_list_final	raytracer.cpp	/^world_list_final()$/;"	f	typeref:typename:object_list
+x	raytracer_math.h	/^		inline f32 x() const {return e[0]; }$/;"	f	class:v3f	typeref:typename:f32
+y	raytracer_math.h	/^		inline f32 y() const {return e[1]; }$/;"	f	class:v3f	typeref:typename:f32
+z	raytracer_math.h	/^		inline f32 z() const {return e[2]; }$/;"	f	class:v3f	typeref:typename:f32
