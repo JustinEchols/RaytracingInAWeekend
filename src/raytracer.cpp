@@ -97,13 +97,95 @@ world_list_defocus_blur()
 	return(Result);
 }
 
+object_list
+world_two_spheres_diffuse()
+{
+	object_list Result;
+
+	material *SphereMaterial = new lambertian(v3f(0.5f, 0.5f, 0.5f));
+
+	Result.add(new sphere(v3f(0.0f, 0.0f, -1.0f), 0.5f, SphereMaterial));
+    Result.add(new sphere(v3f(0.0f, -100.5f, -1.0f), 100.0f, SphereMaterial));
+
+	return(Result);
+
+}
+
 int main(int argc, char **argv)
 {
 	char *filename = "test.ppm";
 	
-	object_list World = world_list_final();
+	char scene = *(*(argv + argc - 1));
 
+	object_list World;
 	camera Camera;
+	switch(scene)
+	{
+		case '1':
+		{
+			World = world_two_spheres_diffuse();
+
+			Camera.image_width = 400;
+			Camera.aspect_ratio = 16.0f / 9.0f;
+
+			Camera.fov_vertical = 60.0f;
+
+			Camera.LookFrom = v3f(0.0f, 0.0f, 1.0f);
+			Camera.LookAt = v3f(0.0f, 0.0f, 0.0f);
+			Camera.Up = v3f(0.0f, 1.0f, 0.0f);
+
+			Camera.defocus_angle = 0.0f;
+			Camera.focus_dist = 1.0f;
+
+			Camera.sample_count = 100;
+			Camera.scatter_count = 50;
+			
+			Camera.init();
+		} break;
+		case '2':
+		{
+			World = world_list_defocus_blur();
+
+			Camera.image_width = 400;
+			Camera.aspect_ratio = 16.0f / 9.0f;
+
+			Camera.fov_vertical = 20.0f;
+
+			Camera.LookFrom = v3f(-2.0f, 2.0f, 1.0f);
+			Camera.LookAt = v3f(0.0f, 0.0f, -1.0f);
+			Camera.Up = v3f(0.0f, 1.0f, 0.0f);
+
+			Camera.defocus_angle = 0.0f;
+			Camera.focus_dist = 1.0f;
+
+			Camera.sample_count = 100;
+			Camera.scatter_count = 50;
+			
+			Camera.init();
+		} break;
+		case '3':
+		{
+			World = world_list_final();
+
+			Camera.image_width = 1200;
+			Camera.aspect_ratio = 16.0f / 9.0f;
+
+			Camera.fov_vertical = 20.0f;
+
+			Camera.LookFrom = v3f(13.0f, 2.0f, 3.0f);
+			Camera.LookAt = v3f(0.0f, 0.0f, 0.0f);
+			Camera.Up = v3f(0.0f, 1.0f, 0.0f);
+
+			Camera.defocus_angle = 0.6f;
+			Camera.focus_dist = 10.0f;
+
+			Camera.sample_count = 500;
+			Camera.scatter_count = 50;
+			
+			Camera.init();
+		} break;
+	}
+
 	Camera.image_render(&World, filename);
 
 	return 0;
