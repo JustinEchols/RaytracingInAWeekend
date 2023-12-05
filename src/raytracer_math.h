@@ -331,9 +331,9 @@ color_linear_to_gamma2(v3f Color)
 {
 	v3f Result = Color;
 
-	Color[0] = sqrt(Color[0]);
-	Color[1] = sqrt(Color[1]);
-	Color[2] = sqrt(Color[2]);
+	Result[0] = sqrt(Result[0]);
+	Result[1] = sqrt(Result[1]);
+	Result[2] = sqrt(Result[2]);
 
 	return(Result);
 }
