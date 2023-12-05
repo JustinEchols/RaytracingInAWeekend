@@ -5,8 +5,8 @@
 class camera
 {
 	public:
-		camera();
-
+		//camera();
+		void init();
 		ray ray_get(s32 x, s32 y) const;
 		v3f ray_sample_square() const;
 		v3f ray_color(object *Obj, const ray &Ray, u32 scatter_count) const;
@@ -52,22 +52,12 @@ class camera
 
 };
 
-camera::camera()
+void
+camera::init()
 {
-	image_width = 1200;
-	aspect_ratio = 16.0f / 9.0f;
 	image_height = (u32)((f32)image_width / aspect_ratio);
 
-	defocus_angle = 0.6f;
-	focus_dist = 10.0f;
-
-	LookFrom = v3f(13.0f, 2.0f, 3.0f);
-	LookAt = v3f(0.0, 0.0f, 0.0f);
-	Up = v3f(0.0f, 1.0f, 0.0f);
-
 	CameraOrigin = LookFrom;
-
-	fov_vertical = 20.0f;
 
 	f32 theta = DEG_TO_RAD(fov_vertical);
 	f32 h = focus_dist * tan(theta / 2.0f);
@@ -87,9 +77,6 @@ camera::camera()
 
 	ViewPortUpperLeft = LookFrom - (focus_dist * W) - (0.5f * ViewPortX) - (0.5f * ViewPortY);
 	Pixel00 = ViewPortUpperLeft + 0.5f * (dX + dY);
-
-	sample_count = 500;
-	scatter_count = 50;
 
 	defocus_radius = focus_dist * tan(DEG_TO_RAD(defocus_angle / 2.0f));
 	DiskX = defocus_radius * U;
